@@ -1,0 +1,166 @@
+; Packaging information for genesis
+name = "Genesis"
+description = "An initial profile for Gateway Sites"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+; Chaos tool suite
+dependencies[] = ctools
+; Charting
+dependencies[] = chart
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+; Display suite
+dependencies[] = ds
+dependencies[] = ds_extras
+dependencies[] = ds_search
+; Fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = field_collection
+dependencies[] = field_group
+dependencies[] = filefield_sources
+dependencies[] = inline_entity_form
+dependencies[] = link
+dependencies[] = remote_file_source
+dependencies[] = smart_trim
+; Input filters
+
+; Media
+
+
+; MediaFront
+dependencies[] = mediafront
+; MediaFront : Players
+dependencies[] = osmplayer
+; OAuth
+dependencies[] = oauth_common
+; Other
+dependencies[] = backup_migrate
+
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = libraries
+
+dependencies[] = menu_block
+dependencies[] = module_filter
+dependencies[] = pathauto
+dependencies[] = remote_stream_wrapper
+dependencies[] = site_map
+dependencies[] = special_menu_items
+dependencies[] = strongarm
+dependencies[] = token
+; Statistics
+dependencies[] = google_analytics_api
+dependencies[] = google_analytics_reports
+dependencies[] = googleanalytics
+; UUID
+
+; User interface
+dependencies[] = ckeditor
+dependencies[] = pasteformat
+; Views
+
+
+
+; XML sitemap
+dependencies[] = xmlsitemap
+; Features
+dependencies[] = features
+
+dependencies[] = features_override
+
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[backup_migrate_destination_id] = 'download'
+variables[backup_migrate_profile_id] = 'default'
+variables[backup_migrate_source_id] = 'db'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'America/Chicago'
+variables[default_nodes_main] = '10'
+variables[entityreference:base-tables][comment][0] = 'comment'
+variables[entityreference:base-tables][comment][1] = 'cid'
+variables[entityreference:base-tables][field_collection_item][0] = 'field_collection_item'
+variables[entityreference:base-tables][field_collection_item][1] = 'item_id'
+variables[entityreference:base-tables][node][0] = 'node'
+variables[entityreference:base-tables][node][1] = 'nid'
+variables[entityreference:base-tables][file][0] = 'file_managed'
+variables[entityreference:base-tables][file][1] = 'fid'
+variables[entityreference:base-tables][taxonomy_term][0] = 'taxonomy_term_data'
+variables[entityreference:base-tables][taxonomy_term][1] = 'tid'
+variables[entityreference:base-tables][taxonomy_vocabulary][0] = 'taxonomy_vocabulary'
+variables[entityreference:base-tables][taxonomy_vocabulary][1] = 'vid'
+variables[entityreference:base-tables][user][0] = 'users'
+variables[entityreference:base-tables][user][1] = 'uid'
+variables[features_ignored_orphans][image] = 'image'
+variables[features_ignored_orphans][file] = 'file'
+variables[features_ignored_orphans][options] = 'options'
+variables[features_ignored_orphans][taxonomy] = 'taxonomy'
+variables[features_ignored_orphans][list] = 'list'
+variables[filter_fallback_format] = 'plain_text'
+variables[node_admin_theme] = 1
+variables[node_options_page][0] = 'status'
+variables[pasteformat_cleanup_format] = 'filtered_html'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = '1'
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][node] = 'true'
+variables[site_frontpage] = 'node'
+variables[theme_default] = 'bartik'
+variables[update_last_email_notification] = '1360768136'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = '2'
+variables[views_defaults][semantic_demo] = true
+variables[views_exposed_filter_any_label] = 'new_any'
+variables[views_ui_always_live_preview] = 1
+variables[views_ui_custom_theme] = '_default'
+variables[views_ui_show_listing_filters] = 1
+variables[views_ui_show_preview_information] = 1
+variables[views_ui_show_sql_query_where] = 'above'
+variables[xmlsitemap_generated_last] = 1378432614
+
